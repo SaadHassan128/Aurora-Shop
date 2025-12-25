@@ -1,9 +1,15 @@
 {
   "version": 2,
   "framework": "angular",
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist/aurora-e-shop/browser",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist/aurora-e-shop/browser" }
+    }
+  ],
   "installCommand": "npm install --legacy-peer-deps",
+  "buildCommand": "ng build",
   "rewrites": [
     {
       "source": "/(.*)",

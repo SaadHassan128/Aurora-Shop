@@ -2,7 +2,6 @@
 
 <div align="center">
 
-![Aurora E-Shop Logo](src/favicon-new.svg)
 
 **A Modern, High-Performance E-Commerce Platform Built with Angular 19**
 
